@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+#menu-container {
+    width: 25%; /* Ocupa um quarto da tela */
+    height: 90%; /* Ocupa toda a altura da tela */
+    overflow-y: auto; /* Adiciona a barra de rolagem vertical */
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+    position: fixed; /* Fixa o menu no lado esquerdo da tela */
+}
+
+#content-container {
+    margin-left: 25%; /* Move o conteúdo para a direita, deixando espaço para o menu */
+    width: 75%; /* Ocupa os três quartos restantes da tela */
+    padding: 20px;
+    /* box-sizing: border-box; */
+    height: 90%; /* Ocupa toda a altura da tela */
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    background-color: #6347ec;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.menu-toggle::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.expanded::before {
+    content: "▼";
+}
+
+.submenu {
+    display: none;
+}
+
+.expanded + .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 5px 10px;
+    background-color: #c2a6e8;
+    margin: 2px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tab-buttons {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-buttons button {
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-buttons button:hover {
+    background-color: #ddd;
+}
+
+.tab-buttons button.active {
+    background-color: #ccc;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+#submit-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1; /* Cor de fundo opcional */
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ccc; /* Linha de separação opcional */
+}
+
+#submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#submit-button:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
