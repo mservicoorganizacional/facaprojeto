@@ -1,0 +1,196 @@
+PROJETO 
+
+
+
+IDENTIFICAÇÃO DO PROJETO
+
+
+CARACTERIZAÇÃO DO PROJETO
+
+Titulo : {{titulo}}
+Tipo de demanda : {{tipoDemanda}}
+Tipo de projeto : {{tipoProjeto}}
+
+LOCALIZAÇÃO GEOGRÁFICA
+
+UF : {{estado}}
+Municipio : {{municipio}}
+Tipo ambiente : {{tipoAmbiente}}
+
+CARACTERIZAÇÃO AMBIENTAL
+
+Bioma : {{biome}}
+
+RESUMO DO PROJETO
+
+Resumo do Projeto : {{projectResume}}
+
+ESCLARECIMENTOS
+
+Esclarecimentos : {{esclarescimento}}
+
+
+
+COORDENAÇÃO DO PROJETO
+
+
+COORDENADOR
+
+CPF : {{cpf}}
+Nome Coordenador : {{nomeCoordenador}}
+O projeto foi elaborado pelo Coordenador? : {{projCoorElab}}
+O Coordenador pertence ao quadro da instituição proponente? : {{coorPertIns}}
+Fonte pagadora : {{fontPag}}
+Contato Coordenador : {{contatoCoordenador}}
+
+COORDENADOR - ATIVIDADES
+
+Atividades do Coordenador : {{ativCoordenador}}
+
+RESPONSÁVEL FINANCEIRO
+
+CPF Responsável Financeiro : {{cpfResponsavelFin}}
+Nome Responsável Financeiro : {{nomeResponsavelFin}}
+O Responsável financeiro pertence ao quadro da instituição proponente? : {{coorPertIns}}
+Fonte pagadora : {{fontPag}}
+Contato Responsável Financeiro : {{contatoResponsavelFin}}
+
+RESP. FIN. - ATIVIDADES
+
+Atividades do Responsável Financeiro : {{ativResponsavelFin}}
+
+
+
+APRESENTAÇÃO DAS INSTITUIÇÕES ENVOLVIDAS NO PROJETO
+
+
+INSTITUIÇÕES ENVOLVIDAS
+
+Nome da Instituição do Projeto : {{nomeInstituicao}}
+Sigla : {{siglaInstituicao}}
+CNPJ da Instituição do Projeto : {{cnpjInstituicao}}
+A Instituição participa neste projeto como : {{partInst}}
+Contato da Instituição do Projeto : {{contatoInstituicao}}
+Forma jurídica : {{formaJur}}
+Esfera : {{esferaJur}}
+
+CARACTERIZAÇÃO DAS UNIDADES RESPONSÁVEIS
+
+Caracterização das Unidades Responsáveis : {{caracUnidadesResp}}
+
+
+
+DIAGNÓSTICO
+
+
+HISTÓRICO DO PROBLEMA
+
+Histórico do Problema : {{histProblema}}
+
+SITUAÇÃO ATUAL
+
+Situação Atual : {{situAtual}}
+
+
+
+JUSTIFICATIVA
+
+
+DESENVOLVIMENTO DO PROJETO
+
+Justificativa para o desenvolvimento do projeto : {{justDesenv}}
+
+ENVOLVIMENTO DA INSTITUIÇÃO NO PROJETO
+
+Justificativa para o envolvimento da instituição no projeto : {{justEnv}}
+
+
+
+POPULAÇÃO DIRETAMENTE ENVOLVIDA
+
+
+IDENTIFICAÇÃO DA POPULAÇÃO
+
+Tipo de população : {{tipoPopualacao}}
+Qtd. pessoas : {{qtdPessoas}}
+Qtd. famílias : {{qtdFamilias}}
+Qtd. mulheres : {{qtdMulheres}}
+
+PARTICIPAÇÃO E APROPRIAÇÃO DOS RESULTADOS
+
+Participação dos beneficiários e apropriação dos resultados do projeto : {{partApropResult}}
+
+
+
+PLANEJAMENTO DO PROJETO
+
+
+OBJETIVO DO PROJETO
+
+Objetivo do projeto : {{objetivosProjeto}}
+
+METAS
+
+Metas do projeto : {{metasProjeto}}
+
+ATIVIDADES
+
+Atividades do projeto : {{atividadesProjeto}}
+
+RISCOS À EXECUÇÃO
+
+Riscos à execução do projeto : {{riscosExecucao}}
+
+RESULTADOS ESPERADOS
+
+Resultados esperados do projeto : {{resultadosEsperados}}
+
+ESTRATÉGIAS DE CONTINUIDADE
+
+Estratégias de continuidade do projeto : {{estrategiasContinuidade}}
+
+
+
+PLANEJAMENTO ORÇAMENTÁRIO
+
+
+ITENS DE DESPESA
+
+ : {{itensDespesa}}
+
+DETALHAMENTO ORÇAMENTÁRIO
+
+Detalhamento orçamentário : {{detalhamentoOrcamentario}}
+
+INSUMOS DECLARADOS
+
+Insumos declarados : {{insumosDeclarados}}
+
+CRONOGRAMA DE EXECUÇÃO FINANCEIRA
+
+Cronograma de execução financeira : {{cronogramaExec}}
+
+
+
+INFORMAÇÕES COMPLEMENTARES
+
+
+EQUIPE TÉCNICA
+
+Equipe técnica : {{equipeTecnica}}
+
+CURRICULUM VITAE
+
+Curriculum vitae : {{curriculumVitae}}
+
+TERMOS DE REFERÊNCIA
+
+Termos de referência : {{termosReferencia}}
+
+OBRAS E INSTALAÇÕES
+
+Obras e instalações : {{obrasInstalacoes}}
+
+EQUIPAMENTOS E MATERIAIS PERMANENTES
+
+Equipamentos e materiais permanentes : {{equipMatPerm}}
