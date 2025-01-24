@@ -1,5 +1,6 @@
 html{
     overflow: hidden;
+    background-color: #77c477c4;
 }
 
 body {
@@ -7,6 +8,22 @@ body {
     margin: 0;
     display: flex;
     overflow: hidden;
+    background-color: #77c477c4;
+}
+
+.status {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; /* Faz a bolinha ser redonda */
+    margin-right: 10px; /* Espaço entre a bolinha e o texto */
+    background-color: red; /* Vermelha por padrão */
+    border: 1px solid #000; /* Borda para parecer com a imagem */
+    display: inline-block;
+}
+  
+  /* Quando preenchido, a bolinha fica verde */
+.status.filled {
+background-color: yellow;
 }
 
 #menu-container {
@@ -15,7 +32,7 @@ body {
     top: 0;
     width: 25%;
     height: 90vh;
-    background-color: white;
+    background-color: #77c477c4;
     color: white;
     display: flex;
     flex-direction: column;
@@ -36,6 +53,7 @@ body {
     /* box-sizing: border-box; */
     height: 90vh; /* Ocupa toda a altura da tela */
     overflow: scroll;
+    background-color: #77c477c4;
 }
 
 
@@ -79,6 +97,8 @@ ul {
     margin: 2px 0;
     border-radius: 5px;
     cursor: pointer;
+    align-items: center;
+    display: flex;
 }
 
 .tab-buttons {
@@ -118,10 +138,10 @@ ul {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #f1f1f1; /* Cor de fundo opcional */
+    background-color: #025802; /* Cor de fundo opcional */
     padding: 10px;
     text-align: center;
-    border-top: 1px solid #ccc; /* Linha de separação opcional */
+    border-top: 1px solid black; /* Linha de separação opcional */
 }
 
 #submit-button {
