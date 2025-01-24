@@ -677,14 +677,14 @@
         }
 
         const { jsPDF } = window.jspdf;
-        const doc = new jsPDF();
+        var doc = new jsPDF();
         
         var fontSize = 20; // Tamanho da fonte em pontos
         const fatorConversao = 0.3528; // 1 ponto ≈ 0.3528 mm
         const alturaLinha = fontSize * fatorConversao;
         var alturaTexto = 0; 
-        var linhas;
-        var splitedString;
+        var linhas = 0;
+        var splitedString = 0;
         var size = 20;
 
         function PrintSplitedText(aux){
@@ -711,7 +711,7 @@
             doc.text(splitedString[0] + ": ", 20, size, { maxWidth: 170 })
             
             doc.setFont("Helvetica", "normal");
-            
+            console.log(splitedString[1]);
             doc.text("  " + splitedString[1], 20 + doc.getTextWidth(splitedString[0] + ": "), size, { maxWidth: 170 })
         
             if (linhas.length > 1){
@@ -733,7 +733,11 @@
                     contratoFinal = text;
                     inputs.forEach(input => {
                         if(input.value != ""){
-                            contratoFinal = contratoFinal.replaceAll('{{'+input.id+'}}', input.value);
+                            if(input.id != ""){
+                                contratoFinal = contratoFinal.replaceAll('{{'+input.id+'}}', input.value);
+                            }else{
+                                contratoFinal = contratoFinal.replaceAll('{{'+input.name+'}}', input.value);
+                            }
                         }
                     });
                 const table = document.getElementById("dynamicTable");
@@ -776,11 +780,9 @@
                 size += alturaTexto + fatorConversao * fontSize * 2;
                 fontSize = 12;
                 doc.setFontSize(12)
-
                 contratoPartes.slice(1, contratoPartes.length).forEach((item, index) => {
                     if(item.includes('\r\n\r\n')){
                         var aux2 = item.split('\r\n\r\n');
-                        console.log(aux2);
                         aux2.forEach((item2, index2) =>{
                             if(item2.includes('\r\n')){
                                 aux3 = item2.split('\r\n');
@@ -810,6 +812,7 @@
                     
                     }
                     else{
+                        console.log(item)
                         linhas = doc.splitTextToSize(item.replace('\n',''), 170);
                         alturaTexto = (linhas.length + 1)* alturaLinha;
 
@@ -826,6 +829,7 @@
                     }
                 })
                 doc.save("projeto.pdf");
+                doc = doc = new jsPDF();
             });
             }
     </script>
