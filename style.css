@@ -1,17 +1,45 @@
 html{
     overflow: hidden;
-    background-color: #77c477c4;
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th,td {
+    background-color: #f2f2f2;
+}
+
+#background{
+
+    background-image: url(https://asasesg.org/wp-content/uploads/2025/01/DeWatermark.ai_1735608327922-_1_-1-1.webp);
+    --background-overlay: '';
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#background-color{
     display: flex;
     overflow: hidden;
     background-color: #77c477c4;
+    height: 100vh;
 }
 
 .status {
+    min-width: 12px;
+    min-height: 12px;
     width: 12px;
     height: 12px;
     border-radius: 50%; /* Faz a bolinha ser redonda */
@@ -32,7 +60,6 @@ background-color: yellow;
     top: 0;
     width: 25%;
     height: 90vh;
-    background-color: #77c477c4;
     color: white;
     display: flex;
     flex-direction: column;
@@ -53,7 +80,6 @@ background-color: yellow;
     /* box-sizing: border-box; */
     height: 90vh; /* Ocupa toda a altura da tela */
     overflow: scroll;
-    background-color: #77c477c4;
 }
 
 
@@ -67,7 +93,7 @@ ul {
     cursor: pointer;
     display: block;
     padding: 10px;
-    background-color: #6347ec;
+    background-color: #30503A;
     border: 1px solid #ddd;
     margin: 5px 0;
     border-radius: 5px;
@@ -93,7 +119,7 @@ ul {
 
 .submenu li {
     padding: 5px 10px;
-    background-color: #c2a6e8;
+    background-color: #5b946d;
     margin: 2px 0;
     border-radius: 5px;
     cursor: pointer;
@@ -148,14 +174,14 @@ ul {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #007bff; /* Cor de fundo do botão */
+    background-color: #427051; /* Cor de fundo do botão */
     color: white;
     border: none;
     border-radius: 5px;
 }
 
 #submit-button:hover {
-    background-color: #0056b3; /* Cor ao passar o mouse */
+    background-color: #294632; /* Cor ao passar o mouse */
 }
 
 textarea {
@@ -164,7 +190,8 @@ textarea {
     height: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #4b3a3a;
+    background-color: #7cc693;
     border-radius: 5px;
     resize: none; /* Permite redimensionar verticalmente */
 }

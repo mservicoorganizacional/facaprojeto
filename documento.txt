@@ -21,9 +21,9 @@ CARACTERIZAÇÃO AMBIENTAL
 
 Bioma : {{biome}}
 
-RESUMO DO PROJETO
+OBJETO DO PROJETO
 
-Resumo do Projeto : {{projectResume}}
+Objeto do Projeto : {{projectResume}}
 
 ESCLARECIMENTOS
 
